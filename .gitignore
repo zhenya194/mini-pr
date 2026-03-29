@@ -1,0 +1,17 @@
+# IDEs
+.vscode/
+.idea/
+.vs/
+
+# Virtual enviroment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+photosrem.egg-info/
+
+# Other
+.DS_Store
+Thumbs.db   
