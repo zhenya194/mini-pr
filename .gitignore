@@ -10,7 +10,6 @@ venv/
 # Python
 __pycache__/
 *.pyc
-photosrem.egg-info/
 
 # Other
 .DS_Store
