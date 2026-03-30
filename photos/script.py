@@ -1,5 +1,4 @@
 from PIL import Image, ImageFilter
-from funcs import small_blur, average_blur, big_blur
 import random
 import webbrowser
 import os
@@ -14,9 +13,10 @@ while True:
             print("Error: help document hadn't opened.")
     elif command.lower() == "exit":
         break
-    elif command.lower() == "rimage":
+    elif command.lower() == "image":
         path:str = input("Write absolute path to your image: ")
         effect:str = input("Write effect which you want to do on image: ")
+        image = Image.open(path)
         if effect.lower() == "blur":
-            image = average_blur(path)
+            image = image.filter(ImageFilter.BLUR)
         image.save(f"image{random.randint(103, 30247)}.png")

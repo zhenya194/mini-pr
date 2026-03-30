@@ -10,6 +10,7 @@ venv/
 # Python
 __pycache__/
 *.pyc
+f.py
 
 # Other
 .DS_Store
