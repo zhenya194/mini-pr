@@ -19,4 +19,4 @@ while True:
         effect:str = input("Write effect which you want to do on image: ")
         if effect.lower() == "blur":
             image = average_blur(path)
-        image.save(f"image{random.randint(103, 3024)}.png")
+        image.save(f"image{random.randint(103, 30247)}.png")
