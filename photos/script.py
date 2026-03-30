@@ -15,8 +15,8 @@ while True:
     elif command.lower() == "exit":
         break
     elif command.lower() == "rimage":
-        path:str = str(input("Write absolute path to your image: "))
-        effect:str = str(input("Write effect which you want to do on image: "))
+        path:str = input("Write absolute path to your image: ")
+        effect:str = input("Write effect which you want to do on image: ")
         if effect.lower() == "blur":
             image = average_blur(path)
-        image.save(f"image{random.randint(103, 30245)}.png")
+        image.save(f"image{random.randint(103, 3024)}.png")
