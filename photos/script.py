@@ -19,4 +19,8 @@ while True:
         image = Image.open(path)
         if effect.lower() == "blur":
             image = image.filter(ImageFilter.BLUR)
+            image = image.filter(ImageFilter.BLUR)
+            image = image.filter(ImageFilter.BLUR)
+            image = image.filter(ImageFilter.BLUR)
+            image = image.filter(ImageFilter.BLUR)
         image.save(f"image{random.randint(103, 30247)}.png")

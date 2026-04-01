@@ -11,6 +11,7 @@ venv/
 __pycache__/
 *.pyc
 f.py
+1.jpg
 
 # Other
 .DS_Store
