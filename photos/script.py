@@ -18,15 +18,15 @@ while True:
         effect:str = input("Write effect which you want to do on image: ")
         image = Image.open(path)
         if effect.lower() == "blur":
-            image = image.filter(ImageFilter.BLUR)
-            image = image.filter(ImageFilter.BLUR)
-            image = image.filter(ImageFilter.BLUR)
-            image = image.filter(ImageFilter.BLUR)
-            image = image.filter(ImageFilter.BLUR)
+            for i in range(5):
+                image = image.filter(ImageFilter.BLUR)
         elif effect.lower() == "white contour":
             image = image.filter(ImageFilter.CONTOUR)
         elif effect.lower() == "canvas":
             for i in range(8):
                 image = image.filter(ImageFilter.DETAIL)
-        elif effect
+        elif effect.lower() == "onboard":
+            image = image.filter(ImageFilter.EMBOSS)
+        else:
+            continue
         image.save(f"image{random.randint(103, 30247)}.png")
