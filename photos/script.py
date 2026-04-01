@@ -25,4 +25,8 @@ while True:
             image = image.filter(ImageFilter.BLUR)
         elif effect.lower() == "white contour":
             image = image.filter(ImageFilter.CONTOUR)
+        elif effect.lower() == "canvas":
+            for i in range(8):
+                image = image.filter(ImageFilter.DETAIL)
+        elif effect
         image.save(f"image{random.randint(103, 30247)}.png")
