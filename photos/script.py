@@ -23,4 +23,6 @@ while True:
             image = image.filter(ImageFilter.BLUR)
             image = image.filter(ImageFilter.BLUR)
             image = image.filter(ImageFilter.BLUR)
+        elif effect.lower() == "white contour":
+            image = image.filter(ImageFilter.CONTOUR)
         image.save(f"image{random.randint(103, 30247)}.png")
