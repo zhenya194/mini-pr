@@ -6,6 +6,4 @@ screen = turtle.Screen()
 screen.setup(650, 650)
 screen.title("Draw")
 
-
-
 turtle.done()
