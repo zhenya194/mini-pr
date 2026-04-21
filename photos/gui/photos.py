@@ -45,8 +45,8 @@ frame.place(relwidth=1, relheight=1)
 generate_btn = Button(frame, text="Generate", bg="#60ed53", command=generate)
 help_btn = Button(frame, text="Help", bg="#f0b4b4", command=help)
 
-text_path = Label(frame, text="Path to image:", bg="gray") # font=40
-text_style = Label(frame, text="Style for image:", bg="gray") # font=40
+text_path = Label(frame, text="Path to image:", bg="gray")
+text_style = Label(frame, text="Style for image:", bg="gray")
 
 path = Entry(frame, bg="white")
 style = Entry(frame, bg="white")
