@@ -13,4 +13,5 @@ __pycache__/
 
 # Other
 .DS_Store
-Thumbs.db   
+Thumbs.db
+*.env
